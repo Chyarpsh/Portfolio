@@ -5,369 +5,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>Cloud Portfolio | Arpita Chowdhury</title>
-    <meta name="description" content="Cloud Support and Junior Cloud Engineer portfolio." />
+    <meta name="description"
+        content="Cloud Support / Junior Cloud Engineer portfolio — projects, skills, and contact." />
 
     <!-- Keep external file (optional) -->
     <link rel="stylesheet" href="./styles.css" />
 
     <!-- IMPORTANT: Inline CSS fallback so the site still looks perfect even if styles.css is not loading -->
     <style>
-        :root {
-            --bg: #0b1020;
-            --card: #121a33;
-            --border: rgba(255, 255, 255, .10);
-            --text: rgba(255, 255, 255, .92);
-            --muted: rgba(255, 255, 255, .72);
-            --green: #23d18b;
-            --purple: #8a63ff;
-            --radius: 16px;
-            --shadow: 0 18px 50px rgba(0, 0, 0, .35);
-        }
-
-        * {
-            box-sizing: border-box
-        }
-
-        html,
-        body {
-            height: 100%
-        }
-
+        /* Fallback: keep page readable if CSS fails to load */
         body {
             margin: 0;
             font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-            background: radial-gradient(1000px 600px at 15% 10%, rgba(35, 209, 139, .18), transparent 60%),
-                radial-gradient(900px 600px at 85% 15%, rgba(138, 99, 255, .18), transparent 60%),
-                var(--bg);
-            color: var(--text);
-            line-height: 1.6;
-            scroll-behavior: smooth;
-        }
-
-        a {
-            color: inherit;
-            text-decoration: none
-        }
-
-        .container {
-            width: min(1000px, calc(100% - 40px));
-            margin: 0 auto
-        }
-
-        /* Header */
-        header {
-            position: sticky;
-            top: 0;
-            z-index: 10;
-            backdrop-filter: blur(12px);
-            background: rgba(11, 16, 32, .78);
-            border-bottom: 1px solid rgba(255, 255, 255, .08);
-        }
-
-        .nav {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            padding: 14px 0;
-            gap: 16px;
-        }
-
-        .brand {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-weight: 800;
-            letter-spacing: .2px;
-            white-space: nowrap;
-        }
-
-        .logo {
-            width: 34px;
-            height: 34px;
-            border-radius: 12px;
-            display: grid;
-            place-items: center;
-            border: 1px solid rgba(255, 255, 255, .14);
-            background: rgba(255, 255, 255, .06);
-            color: var(--green);
-            flex: 0 0 auto;
-        }
-
-        .links {
-            display: flex;
-            gap: 18px;
-            flex-wrap: wrap;
-            justify-content: flex-end;
-        }
-
-        .links a {
-            color: rgba(255, 255, 255, .78);
-            font-weight: 700;
-            padding: 8px 2px;
-            position: relative;
-            font-size: 14px;
-        }
-
-        .links a:hover {
-            color: rgba(255, 255, 255, .95)
-        }
-
-        .links a.active {
-            color: rgba(255, 255, 255, .95)
-        }
-
-        .links a.active::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 2px;
-            border-radius: 999px;
-            background: linear-gradient(90deg, var(--green), var(--purple));
-        }
-
-        /* Sections */
-        section {
-            padding: 56px 0
-        }
-
-        .hero {
-            padding: 64px 0 32px
-        }
-
-        h1 {
-            margin: 0 0 10px;
-            font-size: 46px;
-            line-height: 1.1;
-            letter-spacing: -.02em
-        }
-
-        h2 {
-            margin: 0 0 8px;
-            font-size: 28px;
-            letter-spacing: -.01em
-        }
-
-        p {
-            margin: 0
-        }
-
-        .muted {
-            color: var(--muted)
-        }
-
-        .grad {
-            background: linear-gradient(90deg, var(--green), var(--purple));
-            -webkit-background-clip: text;
-            background-clip: text;
-            color: transparent;
-        }
-
-        .card {
-            background: rgba(255, 255, 255, .06);
-            border: 1px solid var(--border);
-            border-radius: var(--radius);
-            box-shadow: var(--shadow);
-            padding: 18px;
-        }
-
-        .hero-grid {
-            display: grid;
-            grid-template-columns: 1.25fr .75fr;
-            gap: 16px;
-            align-items: start;
-        }
-
-        .cta {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 16px;
-        }
-
-        .btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            padding: 10px 14px;
-            border-radius: 14px;
-            border: 1px solid rgba(255, 255, 255, .14);
-            font-weight: 800;
-            font-size: 14px;
-        }
-
-        .btn.primary {
-            background: rgba(35, 209, 139, .16);
-            border-color: rgba(35, 209, 139, .45);
-            color: var(--text);
-        }
-
-        .btn.secondary {
-            background: rgba(138, 99, 255, .14);
-            border-color: rgba(138, 99, 255, .40);
-            color: var(--text);
-        }
-
-        .btn.ghost {
-            background: rgba(255, 255, 255, .06);
-            color: var(--text);
-        }
-
-        .btn:hover {
-            filter: brightness(1.05)
-        }
-
-        .list {
-            margin: 10px 0 0;
-            padding-left: 18px;
-            color: var(--muted)
-        }
-
-        .list li {
-            margin: 8px 0
-        }
-
-        /* About tags */
-        .tag-grid {
-            margin-top: 14px;
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 10px;
-        }
-
-        .tag {
-            text-align: center;
-            padding: 8px 10px;
-            border-radius: 999px;
-            border: 1px solid rgba(255, 255, 255, .12);
-            background: rgba(255, 255, 255, .06);
-            font-weight: 800;
-            font-size: 13px;
-        }
-
-        /* Skills + Projects grids */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(3, minmax(0, 1fr));
-            gap: 12px;
-            margin-top: 12px;
-        }
-
-        .item h3 {
-            margin: 0 0 6px;
-            font-size: 16px
-        }
-
-        .item p {
-            color: var(--muted);
-            margin: 0;
-            font-size: 14px
-        }
-
-        .pillrow {
-            display: flex;
-            gap: 8px;
-            flex-wrap: wrap;
-            margin-bottom: 8px
-        }
-
-        .pill {
-            font-size: 12px;
-            font-weight: 800;
-            padding: 5px 10px;
-            border-radius: 999px;
-            border: 1px solid rgba(255, 255, 255, .14);
-            background: rgba(255, 255, 255, .06);
-        }
-
-        .pill.green {
-            border-color: rgba(35, 209, 139, .45);
-            background: rgba(35, 209, 139, .14)
-        }
-
-        .pill.purple {
-            border-color: rgba(138, 99, 255, .45);
-            background: rgba(138, 99, 255, .14)
-        }
-
-        .project a {
-            display: inline-block;
-            margin-top: 10px;
-            color: var(--green);
-            font-weight: 900;
-        }
-
-        /* Contact */
-        .contact-grid {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 12px;
-            margin-top: 12px;
-        }
-
-        .contact-card {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-        }
-
-        .contact-left {
-            display: flex;
-            align-items: center;
-            gap: 12px
-        }
-
-        .icon {
-            width: 40px;
-            height: 40px;
-            border-radius: 14px;
-            display: grid;
-            place-items: center;
-            background: rgba(255, 255, 255, .06);
-            border: 1px solid rgba(255, 255, 255, .12);
-            font-weight: 900;
-        }
-
-        footer {
-            padding: 18px 0 30px;
-            text-align: center;
-            color: rgba(255, 255, 255, .55);
-            font-weight: 700;
-        }
-
-        /* Responsive */
-        @media (max-width: 900px) {
-            .hero-grid {
-                grid-template-columns: 1fr
-            }
-
-            .grid {
-                grid-template-columns: 1fr 1fr
-            }
-
-            .tag-grid {
-                grid-template-columns: 1fr 1fr
-            }
-        }
-
-        @media (max-width: 600px) {
-            h1 {
-                font-size: 36px
-            }
-
-            .grid {
-                grid-template-columns: 1fr
-            }
-
-            .contact-grid {
-                grid-template-columns: 1fr
-            }
-
-            .links {
-                gap: 12px
-            }
+            background: #0b1020;
+            color: #fff
         }
     </style>
 </head>
@@ -395,9 +46,9 @@
         <section id="home" class="hero">
             <div class="container hero-grid">
                 <div>
-                    <h1>Hi, I’m <span class="grad">Arpita Chowdhury</span>.<br />Cloud Support and Junior Cloud
-                        Engineer.
-                    </h1>
+                    <h1>Hi, I am <span class="grad">Arpita Chowdhury</span>.<br />Cloud Support and Junior Cloud
+                        Engineer.</h1>
+
 
                     <div class="cta">
                         <a class="btn primary" href="./Arpita_Chowdhury_Resume.pdf" target="_blank"
@@ -425,18 +76,18 @@
         <!-- ABOUT -->
         <section id="about">
             <div class="container">
-                <h2>About</h2>
+                <h2>About Me</h2>
 
                 <div class="card" style="margin-top:12px;">
                     <p>
                         Aspiring cloud support focused engineer passionate about troubleshooting, reliability, and clear
                         technical documentation. I build and troubleshoot production-style AWS projects, focusing on
-                        reliability, monitoring, networking, and clear documentation. <br>
-                    </p>
+                        reliability, monitoring, networking, and clear documentation.
+                    </p> <br>
                     <p>
                         I learn by building real cloud environments and debugging real problems—connectivity issues,
                         permissions, deployment failures, and monitoring gaps.
-                        I document each project with clean READMEs, runbook-style steps, and lessons learned. I’m
+                        I document each project with clean READMEs, runbook-style steps, and lessons learned. I am
                         looking for a role where I can resolve customer issues fast,
                         communicate clearly, and help keep cloud services stable.
                     </p>
@@ -457,7 +108,8 @@
         <section id="skills">
             <div class="container">
                 <h2>Skills</h2>
-                <p class="muted">Core tools and concepts I use across projects.</p>
+                <p class="muted skills-subtext">These are some of the core tools and concepts I used to build this
+                    projects.</p>
 
                 <div class="grid">
                     <div class="card item">
@@ -492,6 +144,9 @@
         <section id="projects">
             <div class="container">
                 <h2>Projects</h2>
+                <p class="muted skills-subtext">Here are some of the projects I did related to Cloud Support and Junior
+                    Cloud Engineer.</p>
+
                 <div class="grid">
                     <div class="card project">
                         <div class="pillrow"><span class="pill green">AWS</span><span
@@ -567,6 +222,7 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact</h2>
+                <p class="muted section-subtext">Best ways to reach me.</p>
 
                 <div class="contact-grid">
                     <a class="card contact-card" href="mailto:chowdhurya290@gmail.com">

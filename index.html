@@ -7,39 +7,27 @@
     <title>Cloud Portfolio | Arpita Chowdhury</title>
 
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
-    <!-- Font Awesome (icons) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7a4b2b1a8a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <!-- Background layers -->
-    <div class="bg">
-        <div class="bg-grid"></div>
-        <div class="bg-orb orb-1"></div>
-        <div class="bg-orb orb-2"></div>
-        <div class="bg-orb orb-3"></div>
-    </div>
 
-    <!-- Header -->
+    <!-- HEADER -->
     <header class="header">
         <div class="container nav">
-            <a class="brand" href="#home" aria-label="Cloud Portfolio Home">
-                <span class="brand-badge" aria-hidden="true">
-                    <!-- Inline SVG logo so it never disappears -->
-                    <svg class="brand-logo" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+            <a class="brand" href="#">
+                <span class="brand-badge">
+                    <svg class="brand-logo" viewBox="0 0 24 24" fill="none">
                         <path
                             d="M7.5 18.5h9.2c2.3 0 4.3-1.7 4.3-4.1 0-2.2-1.6-3.9-3.7-4.1C16.7 7 14.6 5 12 5c-2.5 0-4.6 1.8-5.1 4.2C4.7 9.6 3 11.3 3 13.6c0 2.7 2.1 4.9 4.5 4.9Z"
-                            stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
+                            stroke="currentColor" stroke-width="1.8" />
                     </svg>
                 </span>
-                <span class="brand-text">Cloud Portfolio</span>
+                Cloud Portfolio
             </a>
 
-            <nav class="nav-links" aria-label="Primary">
+            <nav class="nav-links">
                 <a href="#home" class="nav-link active">Home</a>
                 <a href="#about" class="nav-link">About</a>
                 <a href="#skills" class="nav-link">Skills</a>
@@ -49,249 +37,89 @@
         </div>
     </header>
 
-    <!-- Main -->
     <main>
-        <!-- Hero -->
+
+        <!-- HERO -->
         <section id="home" class="hero">
-            <div class="container hero-grid">
-                <div class="hero-copy">
-                    <h1 class="hero-title">
-                        Hi, I am <span class="grad">Arpita Chowdhury</span><br />
-                        This is my portfolio.
-                    </h1>
-                    <p class="hero-role">Cloud Support Engineer | Junior Cloud Engineer</p>
-                    <p class="hero-sub">
-                        Aspiring Cloud Engineer focused on building, troubleshooting, and documenting<br />
-                        production-style AWS infrastructure.
-                    </p>
+            <div class="container">
+                <h1 class="hero-title">
+                    Hi, I am <span class="grad">Arpita Chowdhury</span><br>
+                    This is my portfolio.
+                </h1>
 
-                    <div class="hero-actions">
-                        <a class="btn btn-primary" href="./Arpita_Chowdhury_Resume.pdf" target="_blank" rel="noopener">
-                            <i class="fa-solid fa-file"></i> Resume
-                        </a>
-                        <a class="btn btn-ghost" href="https://github.com/Chyarpsh/aws-cloud-engineer-projects"
-                            target="_blank" rel="noopener">
-                            <i class="fa-brands fa-github"></i> GitHub
-                        </a>
-                        <a class="btn btn-ghost" href="https://www.linkedin.com/in/arpita-chowdhury-865a87203/"
-                            target="_blank" rel="noopener">
-                            <i class="fa-brands fa-linkedin"></i> LinkedIn
-                        </a>
-                        <a class="btn btn-ghost" href="mailto:chowdhurya290@gmail.com">
-                            <i class="fa-solid fa-envelope"></i> Email
-                        </a>
-                        <a class="btn btn-soft" href="#projects">
-                            <i class="fa-solid fa-rocket"></i> View Projects
-                        </a>
-                    </div>
+                <p class="hero-role">Cloud Support Engineer | Junior Cloud Engineer</p>
 
-                    <div class="stats">
-                        <div class="stat-card tilt">
-                            <div class="stat-num">50+</div>
-                            <div class="stat-label">AWS Projects</div>
-                        </div>
-                        <div class="stat-card tilt">
-                            <div class="stat-num">7</div>
-                            <div class="stat-label">Learning Phases</div>
-                        </div>
-                        <div class="stat-card tilt">
-                            <div class="stat-num">100%</div>
-                            <div class="stat-label">Hands-On</div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-panel card">
-                    <div class="hero-card-header">
-                        <span class="pill"><i class="fa-solid fa-circle-check"></i> Portfolio Highlights</span>
-                    </div>
-                    <ul class="hero-list">
-                        <li><i class="fa-solid fa-bolt"></i> Infrastructure automation + CI/CD</li>
-                        <li><i class="fa-solid fa-shield-halved"></i> Security-first troubleshooting</li>
-                        <li><i class="fa-solid fa-chart-line"></i> Monitoring + incident-style debugging</li>
-                        <li><i class="fa-solid fa-diagram-project"></i> Clean documentation + diagrams</li>
-                    </ul>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="./Arpita_Chowdhury_Resume.pdf" target="_blank">Resume</a>
+                    <a class="btn btn-ghost" href="https://github.com/Chyarpsh/aws-cloud-engineer-projects"
+                        target="_blank">GitHub</a>
+                    <a class="btn btn-ghost" href="https://www.linkedin.com/in/arpita-chowdhury-865a87203/"
+                        target="_blank">LinkedIn</a>
+                    <a class="btn btn-ghost" href="mailto:chowdhurya290@gmail.com">Email</a>
                 </div>
             </div>
         </section>
 
-        <!-- About -->
+        <!-- ABOUT -->
         <section id="about" class="section">
             <div class="container">
                 <h2 class="section-title">About Me</h2>
+
                 <div class="card about-card">
-                    <p>
-                        I am a Master's student in Computer Science (Non-Thesis) at Texas State University (Graduating
-                        May
-                        2026). I’m focused on Cloud Support / Cloud Engineering roles and I build production-style AWS
-                        projects to gain real-world troubleshooting experience.
+                    <p class="about-lead">
+                        Cloud Support–focused engineer passionate about troubleshooting, reliability, and clear
+                        technical documentation.
                     </p>
 
-                    <div class="about-badges">
-                        <span class="chip">AWS</span>
-                        <span class="chip">Troubleshooting</span>
-                        <span class="chip">CI/CD</span>
-                        <span class="chip">Monitoring</span>
-                        <span class="chip">Documentation</span>
+                    <p class="about-body">
+                        I build and debug real cloud environments to develop strong incident-response thinking and
+                        production support skills.
+                        My focus is on AWS infrastructure, networking issues, deployment failures, monitoring, and
+                        creating clear runbooks.
+                        I aim to support teams by resolving customer issues quickly and improving system reliability.
+                    </p>
+
+                    <div class="about-tags">
+                        <span class="tag-pill">Cloud Support</span>
+                        <span class="tag-pill">AWS</span>
+                        <span class="tag-pill">Troubleshooting</span>
+                        <span class="tag-pill">Networking</span>
+                        <span class="tag-pill">CI/CD</span>
+                        <span class="tag-pill">Monitoring</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Skills -->
-        <section id="skills" class="section">
-            <div class="container">
-                <h2 class="section-title">Skills</h2>
-                <div class="skills-grid">
-                    <div class="card skill tilt">
-                        <i class="fa-solid fa-server"></i>
-                        <h3>AWS Core</h3>
-                        <p>EC2, S3, IAM, VPC, CloudFront, CloudWatch</p>
-                    </div>
-                    <div class="card skill tilt">
-                        <i class="fa-solid fa-diagram-project"></i>
-                        <h3>CI/CD</h3>
-                        <p>CodeDeploy, pipelines, deployment debugging</p>
-                    </div>
-                    <div class="card skill tilt">
-                        <i class="fa-solid fa-chart-line"></i>
-                        <h3>Observability</h3>
-                        <p>Dashboards, alarms, logs, metrics</p>
-                    </div>
-                    <div class="card skill tilt">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <h3>Security</h3>
-                        <p>Security groups, IAM policies, hardening basics</p>
-                    </div>
-                    <div class="card skill tilt">
-                        <i class="fa-solid fa-network-wired"></i>
-                        <h3>Networking</h3>
-                        <p>Route tables, subnets, connectivity debugging</p>
-                    </div>
-                    <div class="card skill tilt">
-                        <i class="fa-solid fa-file-lines"></i>
-                        <h3>Documentation</h3>
-                        <p>Runbooks, postmortems, clean GitHub READMEs</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Projects -->
-        <section id="projects" class="section">
-            <div class="container">
-                <h2 class="section-title">Projects</h2>
-
-                <div class="projects-grid">
-                    <!-- Project 1 -->
-                    <article class="card project tilt">
-                        <div class="project-top">
-                            <span class="tag">AWS</span>
-                            <span class="tag">HA/DR</span>
-                        </div>
-                        <h3>Multi-Cloud DR + Observability</h3>
-                        <p>
-                            Failover testing, routing patterns, dashboards, and production-style documentation.
-                        </p>
-                        <a class="project-link" href="https://github.com/Chyarpsh/aws-cloud-engineer-projects"
-                            target="_blank" rel="noopener">
-                            View on GitHub →
-                        </a>
-                    </article>
-
-                    <!-- Project 2 -->
-                    <article class="card project tilt">
-                        <div class="project-top">
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">Troubleshooting</span>
-                        </div>
-                        <h3>GlobalMart CI/CD Pipeline</h3>
-                        <p>
-                            Build + deploy pipelines with real debugging notes and deployment reliability improvements.
-                        </p>
-                        <a class="project-link" href="https://github.com/Chyarpsh/aws-cloud-engineer-projects"
-                            target="_blank" rel="noopener">
-                            View on GitHub →
-                        </a>
-                    </article>
-
-                    <!-- Project 3 -->
-                    <article class="card project tilt">
-                        <div class="project-top">
-                            <span class="tag">Networking</span>
-                            <span class="tag">Security</span>
-                        </div>
-                        <h3>VPC + EC2 Troubleshooting</h3>
-                        <p>
-                            Route tables, security groups, flow logs, and incident-style investigation walkthroughs.
-                        </p>
-                        <a class="project-link" href="https://github.com/Chyarpsh/aws-cloud-engineer-projects"
-                            target="_blank" rel="noopener">
-                            View on GitHub →
-                        </a>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact (UPDATED) -->
+        <!-- CONTACT -->
         <section id="contact" class="section">
             <div class="container">
                 <h2 class="section-title">Contact</h2>
 
-                <div class="contact-wrap card">
-                    <div class="contact-head">
-                        <p class="contact-kicker">Open to entry-level Cloud Support / Junior Cloud Engineer roles.</p>
-                        <p class="contact-sub">Fastest way to reach me:</p>
-                    </div>
+                <div class="contact-grid">
+                    <a class="contact-tile" href="mailto:chowdhurya290@gmail.com">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>Send me a message</p>
+                        </div>
+                    </a>
 
-                    <div class="contact-grid">
-                        <a class="contact-tile tilt" href="mailto:chowdhurya290@gmail.com">
-                            <div class="contact-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M4 6.5h16v11H4v-11Z" stroke="currentColor" stroke-width="1.8"
-                                        stroke-linejoin="round" />
-                                    <path d="m4.5 7 7.5 6 7.5-6" stroke="currentColor" stroke-width="1.8"
-                                        stroke-linecap="round" stroke-linejoin="round" />
-                                </svg>
-                            </div>
-                            <div class="contact-info">
-                                <h3>Email</h3>
-                                <p>chowdhurya290@gmail.com</p>
-                                <span class="contact-cta">Send an email →</span>
-                            </div>
-                        </a>
-
-                        <a class="contact-tile tilt" href="https://www.linkedin.com/in/arpita-chowdhury-865a87203/"
-                            target="_blank" rel="noopener">
-                            <div class="contact-icon" aria-hidden="true">
-                                <svg viewBox="0 0 24 24" fill="none">
-                                    <path d="M6.5 10v8" stroke="currentColor" stroke-width="1.8"
-                                        stroke-linecap="round" />
-                                    <path d="M6.5 7.2h.01" stroke="currentColor" stroke-width="3.2"
-                                        stroke-linecap="round" />
-                                    <path d="M11 18v-4.3c0-1.9 1.2-3 2.8-3 1.6 0 2.7 1.1 2.7 3V18" stroke="currentColor"
-                                        stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-                                    <path d="M11 10v8" stroke="currentColor" stroke-width="1.8"
-                                        stroke-linecap="round" />
-                                    <path d="M4 20h16" stroke="currentColor" stroke-width="1.2" opacity=".35" />
-                                </svg>
-                            </div>
-                            <div class="contact-info">
-                                <h3>LinkedIn</h3>
-                                <p>Connect & message me</p>
-                                <span class="contact-cta">Open LinkedIn →</span>
-                            </div>
-                        </a>
-                    </div>
+                    <a class="contact-tile" href="https://www.linkedin.com/in/arpita-chowdhury-865a87203/"
+                        target="_blank">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <div>
+                            <h3>LinkedIn</h3>
+                            <p>Connect with me</p>
+                        </div>
+                    </a>
                 </div>
-
-                <p class="footer">© <span id="year"></span> Cloud Portfolio</p>
             </div>
         </section>
+
     </main>
 
-    <script src="./script.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

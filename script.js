@@ -48,3 +48,10 @@ tilts.forEach(el => {
         el.style.transform = "";
     });
 });
+// Highlight active nav link when clicked
+document.querySelectorAll(".nav-link").forEach(link => {
+    link.addEventListener("click", () => {
+        document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"))
+        link.classList.add("active")
+    })
+});

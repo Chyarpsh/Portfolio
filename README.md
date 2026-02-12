@@ -1,16 +1,10 @@
-# Cloud Portfolio (Purple + Green)
+# Portfolio
 
-Simple, professional one-page portfolio for Cloud Support / Junior Cloud Engineer roles.
+This portfolio is intentionally kept **simple** and **reliable**.
 
-## Replace your repo files with:
-- `index.html`  → use `UPDATED_index.html` (rename to `index.html`)
-- `styles.css`  → use `UPDATED_styles.css` (rename to `styles.css`)
-- `script.js`   → use `UPDATED_script.js` (rename to `script.js`)
-- `README.md`   → use `UPDATED_README.md` (rename to `README.md`)
+✅ The full CSS and JS are embedded inside `index.html` as a fallback,
+so the site still looks correct even if GitHub Pages caches old files.
 
-## Resume link
-Make sure the resume filename in your repo is exactly:
-`Arpita_Chowdhury_Resume.pdf`
-
-## Deploy (GitHub Pages)
-Repo → Settings → Pages → main branch → /root
+## Deploy
+- Push `index.html` and your resume PDF
+- Open GitHub Pages URL and hard refresh (Cmd+Shift+R)

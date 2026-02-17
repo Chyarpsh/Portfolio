@@ -8,16 +8,13 @@
     <meta name="description"
         content="Cloud Support / Junior Cloud Engineer portfolio — projects, skills, and contact." />
 
-    <!-- Keep external file (optional) -->
     <link rel="stylesheet" href="./styles.css" />
 
-    <!-- IMPORTANT: Inline CSS fallback so the site still looks perfect even if styles.css is not loading -->
     <style>
-        /* Fallback: keep page readable if CSS fails to load */
         body {
             margin: 0;
             font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
-            background: #0b1020;
+            background: #1a1f35;
             color: #fff
         }
     </style>
@@ -34,8 +31,10 @@
             <nav class="links" aria-label="Primary navigation">
                 <a class="nav-link active" href="#home">Home</a>
                 <a class="nav-link" href="#about">About</a>
+                <a class="nav-link" href="#experience">Experience</a>
                 <a class="nav-link" href="#skills">Skills</a>
                 <a class="nav-link" href="#projects">Projects</a>
+                <a class="nav-link" href="#certifications">Certifications</a>
                 <a class="nav-link" href="#contact">Contact</a>
             </nav>
         </div>
@@ -44,31 +43,51 @@
     <main>
         <!-- HERO -->
         <section id="home" class="hero">
-            <div class="container hero-grid">
-                <div>
-                    <h1>Hello, My name is <span class="grad">Arpita Chowdhury</span></h1>
+            <div class="container hero-container">
+                <h1>Hello, I'm <span class="grad">Arpita Chowdhury</span></h1>
+                <p class="hero-lead">Proven <strong>97% first-contact resolution rate</strong> resolving 47+ technical issues.</p>
+                <p class="hero-tagline">Building production-style AWS environments with focus on troubleshooting, monitoring, and reliability.</p>
 
+                <div class="cta">
+                    <a class="btn primary" href="./Arpita_Chowdhury_Resume.pdf" target="_blank" rel="noopener">Resume</a>
+                    <a class="btn secondary" href="https://github.com/Chyarpsh" target="_blank" rel="noopener">GitHub</a>
+                    <a class="btn secondary" href="https://www.linkedin.com/in/arpita-chowdhury-865a87203/" target="_blank" rel="noopener">LinkedIn</a>
+                    <a class="btn ghost" href="mailto:chowdhurya290@gmail.com">Email</a>
+                </div>
+            </div>
+        </section>
 
-                    <div class="cta">
-                        <a class="btn primary" href="./Arpita_Chowdhury_Resume.pdf" target="_blank"
-                            rel="noopener">Resume</a>
-                        <a class="btn secondary" href="https://github.com/Chyarpsh/aws-cloud-engineer-projects"
-                            target="_blank" rel="noopener">GitHub</a>
-                        <a class="btn secondary" href="https://www.linkedin.com/in/arpita-chowdhury-865a87203/"
-                            target="_blank" rel="noopener">LinkedIn</a>
-                        <a class="btn ghost" href="mailto:chowdhurya290@gmail.com">Email</a>
+        <!-- WHAT I DO -->
+        <section id="what-i-do" class="what-i-do">
+            <div class="container">
+                <h2>What I Do</h2>
+                <p class="section-subtext">Core expertise in cloud support and troubleshooting</p>
+
+                <div class="what-grid">
+                    <div class="card what-card hover-lift">
+                        <div class="what-icon">🔍</div>
+                        <h3>Debug & Troubleshoot</h3>
+                        <p>Diagnose networking, IAM, and deployment issues using CloudWatch, VPC Flow Logs, and Policy Simulator</p>
+                    </div>
+
+                    <div class="card what-card hover-lift">
+                        <div class="what-icon">📊</div>
+                        <h3>Setup Monitoring</h3>
+                        <p>Configure alarms, dashboards, and observability systems for proactive incident detection</p>
+                    </div>
+
+                    <div class="card what-card hover-lift">
+                        <div class="what-icon">📝</div>
+                        <h3>Document Solutions</h3>
+                        <p>Write clear runbooks, step-by-step fixes, and maintain comprehensive troubleshooting guides</p>
+                    </div>
+
+                    <div class="card what-card hover-lift">
+                        <div class="what-icon">🏗️</div>
+                        <h3>Build Infrastructure</h3>
+                        <p>Create repeatable patterns using IaC, CI/CD pipelines, and production-ready architectures</p>
                     </div>
                 </div>
-
-                <aside class="card">
-                    <h2 style="margin:0 0 8px; font-size:18px;">What I do</h2>
-                    <ul class="list">
-                        <li>Debug networking, IAM, and deployment issues</li>
-                        <li>Set up monitoring, alarms, and dashboards</li>
-                        <li>Write clear documentation and step-by-step fixes</li>
-                        <li>Build repeatable infrastructure patterns</li>
-                    </ul>
-                </aside>
             </div>
         </section>
 
@@ -77,28 +96,46 @@
             <div class="container">
                 <h2>About Me</h2>
 
-                <div class="card" style="margin-top:12px;">
+                <div class="card hover-lift about-card">
                     <p>
-                        Aspiring cloud support focused engineer passionate about troubleshooting, reliability, and clear
-                        technical documentation. I build and troubleshoot production-style AWS projects, focusing on
-                        reliability, monitoring, networking, and clear documentation.
-                    </p> <br>
+                        I'm an MS Computer Science student at Texas State University with hands-on experience resolving technical issues in production-style environments. Currently working as a Front Desk Assistant where I've achieved <strong>97% first-contact resolution</strong> on 47+ technical issues including building access systems, package tracking software, and resident portal access.
+                    </p>
                     <p>
-                        I learn by building real cloud environments and debugging real problems—connectivity issues,
-                        permissions, deployment failures, and monitoring gaps.
-                        I document each project with clean READMEs, runbook-style steps, and lessons learned. I am
-                        looking for a role where I can resolve customer issues fast,
-                        communicate clearly, and help keep cloud services stable.
+                        I learn by building real cloud environments and debugging real problems—connectivity issues, permissions, deployment failures, and monitoring gaps. Each of my 50+ AWS projects includes clean documentation, runbook-style steps, troubleshooting notes, and lessons learned. I'm looking for a Cloud Support Engineer or Junior Cloud Engineer role where I can resolve customer issues fast, communicate clearly, and help keep cloud services stable.
                     </p>
 
                     <div class="tag-grid" aria-label="Core strengths">
-                        <div class="tag">Cloud Support</div>
-                        <div class="tag">AWS</div>
-                        <div class="tag">Troubleshooting</div>
-                        <div class="tag">Networking</div>
-                        <div class="tag">CI/CD</div>
-                        <div class="tag">Monitoring</div>
+                        <div class="tag hover-pop">Cloud Support</div>
+                        <div class="tag hover-pop">AWS</div>
+                        <div class="tag hover-pop">Troubleshooting</div>
+                        <div class="tag hover-pop">Networking</div>
+                        <div class="tag hover-pop">CI/CD</div>
+                        <div class="tag hover-pop">Monitoring</div>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experience">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <p class="section-subtext">Real-world technical support experience with proven metrics</p>
+
+                <div class="card hover-lift exp-card">
+                    <div class="exp-header">
+                        <div>
+                            <h3>Front Desk Assistant (Student Employee)</h3>
+                            <div class="company">Texas State University</div>
+                        </div>
+                        <div class="date">Aug 2024 – May 2026</div>
+                    </div>
+                    
+                    <ul class="achievement-list">
+                        <li>Resolved <strong>47+ real-time technical issues</strong> including building access systems, package tracking software, and resident portal access by troubleshooting system errors and collaborating with IT teams, achieving <strong>97% first-contact resolution rate</strong></li>
+                        <li>Documented <strong>135+ incident reports</strong> using university ticketing system to maintain audit trails for security investigations, ensuring 100% compliance with data privacy policies and improving incident response time by <strong>23%</strong></li>
+                        <li>Escalated 31 critical issues to appropriate departments within <strong>15-minute SLA</strong> while tracking resolution status, implementing shift handoff procedures that improved cross-team service continuity by <strong>31%</strong></li>
+                    </ul>
                 </div>
             </div>
         </section>
@@ -107,33 +144,32 @@
         <section id="skills">
             <div class="container">
                 <h2>Skills</h2>
-                <p class="muted skills-subtext">These are some of the core tools and concepts I used to build this
-                    projects.</p>
+                <p class="section-subtext">Core tools and technologies I use to build and troubleshoot cloud infrastructure</p>
 
-                <div class="grid">
-                    <div class="card item">
+                <div class="skills-grid">
+                    <div class="card skill-card hover-lift">
                         <h3>AWS Core</h3>
-                        <p>EC2, S3, IAM, VPC, CloudFront, CloudWatch, App Runner</p>
+                        <p>EC2, S3, IAM, VPC, CloudFront, CloudWatch, RDS, Lambda, DynamoDB, Route 53</p>
                     </div>
-                    <div class="card item">
+                    <div class="card skill-card hover-lift">
                         <h3>Networking</h3>
-                        <p>Subnets, route tables, security groups, NACLs, DNS basics</p>
+                        <p>Subnets, route tables, security groups, NACLs, VPC Flow Logs, VPC peering, load balancers</p>
                     </div>
-                    <div class="card item">
-                        <h3>CI/CD</h3>
-                        <p>Build + deploy workflows, troubleshooting pipeline failures</p>
+                    <div class="card skill-card hover-lift">
+                        <h3>CI/CD & DevOps</h3>
+                        <p>CodePipeline, CodeBuild, CodeDeploy, Terraform, Docker, Kubernetes, CloudFormation</p>
                     </div>
-                    <div class="card item">
+                    <div class="card skill-card hover-lift">
                         <h3>Observability</h3>
-                        <p>Logs, metrics, alarms, dashboards, incident-style debugging</p>
+                        <p>CloudWatch Logs/Metrics/Alarms, VPC Flow Logs, CloudTrail, GuardDuty, Container Insights</p>
                     </div>
-                    <div class="card item">
+                    <div class="card skill-card hover-lift">
                         <h3>Security</h3>
-                        <p>Least privilege IAM, secure defaults, hardening basics</p>
+                        <p>IAM policies, KMS encryption, Secrets Manager, security groups, least privilege, IAM Policy Simulator</p>
                     </div>
-                    <div class="card item">
-                        <h3>Documentation</h3>
-                        <p>Runbooks, clean READMEs, step-by-step resolution notes</p>
+                    <div class="card skill-card hover-lift">
+                        <h3>Programming & Tools</h3>
+                        <p>Python, SQL, Bash, Git, Linux, root cause analysis, incident documentation</p>
                     </div>
                 </div>
             </div>
@@ -143,76 +179,146 @@
         <section id="projects">
             <div class="container">
                 <h2>Projects</h2>
-                <p class="muted skills-subtext">Here are some of the projects I did related to Cloud Support and Junior
-                    Cloud Engineer.</p>
+                <p class="section-subtext">Production-style AWS projects with real metrics and documented troubleshooting</p>
 
-                <div class="grid">
-                    <div class="card project">
-                        <div class="pillrow"><span class="pill green">AWS</span><span
-                                class="pill purple">Multi-Region</span></div>
-                        <h3 style="margin:0 0 6px;">Multi-Region Application on AWS</h3>
-                        <p class="muted">Deployed a multi-region setup to improve availability and latency, with clear
-                            failover notes.</p>
-                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank"
-                            rel="noopener">View on GitHub →</a>
+                <div class="projects-grid">
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">AWS</span>
+                            <span class="pill purple">Support</span>
+                        </div>
+                        <h3>Cloud Support Ticketing Simulation</h3>
+                        <p class="muted">Simulated 3 production incidents (EC2 connectivity, CloudFront failover, CI/CD failures). Diagnosed root causes in 67 minutes using VPC Flow Logs, CloudWatch, and IAM Policy Simulator, reducing recurring incidents by 31%.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects/tree/main/cloud-support-ticketing-simulation" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
                     </div>
 
-                    <div class="card project">
-                        <div class="pillrow"><span class="pill green">CloudFront</span><span
-                                class="pill purple">Failover</span></div>
-                        <h3 style="margin:0 0 6px;">CloudFront Origin Failover</h3>
-                        <p class="muted">Implemented origin groups and health-based routing to keep the app available
-                            during outages.</p>
-                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank"
-                            rel="noopener">View on GitHub →</a>
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">AWS</span>
+                            <span class="pill purple">Multi-Region</span>
+                        </div>
+                        <h3>Multi-Region High Availability Application</h3>
+                        <p class="muted">Architected active-active infrastructure across US-East-1 and US-West-2 using Route 53, multi-region RDS, and S3 cross-region replication. Achieved 99.95% uptime and reduced failover time from 12 minutes to 47 seconds.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects/tree/main/Advanced%20Cloud%20Architecture%20%26%20Resilience%20Projects" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
                     </div>
 
-                    <div class="card project">
-                        <div class="pillrow"><span class="pill green">Multi-Cloud</span><span
-                                class="pill purple">Pulumi</span></div>
-                        <h3 style="margin:0 0 6px;">Multi-Cloud DR (AWS + GCP)</h3>
-                        <p class="muted">Built IaC-driven disaster recovery with failover testing and observability
-                            dashboards.</p>
-                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank"
-                            rel="noopener">View on GitHub →</a>
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">CloudFront</span>
+                            <span class="pill purple">Failover</span>
+                        </div>
+                        <h3>CloudFront Origin Failover & Edge Security</h3>
+                        <p class="muted">Configured origin groups with health-based routing between primary ALB and S3 backup. Optimized failover criteria to exclude deployment-related 503 errors, reducing service interruption from 2.3 hours to 39 seconds.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects/tree/main/Advanced%20Cloud%20Architecture%20%26%20Resilience%20Projects" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
                     </div>
 
-                    <div class="card project">
-                        <div class="pillrow"><span class="pill green">Support</span><span
-                                class="pill purple">Incident</span></div>
-                        <h3 style="margin:0 0 6px;">Cloud Support Ticketing Simulation</h3>
-                        <p class="muted">Practiced incident workflows: triage, RCA, resolution steps, and preventative
-                            actions.</p>
-                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank"
-                            rel="noopener">View on GitHub →</a>
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">Networking</span>
+                            <span class="pill purple">VPC</span>
+                        </div>
+                        <h3>VPC Networking & Connectivity (11 Labs)</h3>
+                        <p class="muted">Diagnosed 27+ connectivity failures across public/private subnets, NAT gateways, and VPC peering using route table analysis and Flow Logs, reducing troubleshooting time from 2.1 hours to 41 minutes.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank" rel="noopener" class="project-link">View Labs on GitHub →</a>
                     </div>
 
-                    <div class="card project">
-                        <div class="pillrow"><span class="pill green">CI/CD</span><span
-                                class="pill purple">Debugging</span></div>
-                        <h3 style="margin:0 0 6px;">CI/CD Pipeline on AWS</h3>
-                        <p class="muted">Built and troubleshot deployment pipelines, focusing on IAM, build errors, and
-                            safe deploys.</p>
-                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank"
-                            rel="noopener">View on GitHub →</a>
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">CI/CD</span>
+                            <span class="pill purple">Debugging</span>
+                        </div>
+                        <h3>CI/CD Pipeline Implementation & Debugging</h3>
+                        <p class="muted">Built end-to-end pipeline using CodePipeline, CodeBuild, and CodeDeploy. Debugged 9 IAM permission failures with Policy Simulator and CloudWatch Logs analysis, improving deployment success rate by 33%.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects/tree/main/p6-lab08-build-a-ci-cd-pipeline-with-aws" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
                     </div>
 
-                    <div class="card project">
-                        <div class="pillrow"><span class="pill green">Networking</span><span
-                                class="pill purple">VPC</span></div>
-                        <h3 style="margin:0 0 6px;">VPC &amp; EC2 Troubleshooting</h3>
-                        <p class="muted">Diagnosed connectivity issues across routing, security groups, and subnet
-                            design.</p>
-                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank"
-                            rel="noopener">View on GitHub →</a>
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">Multi-Cloud</span>
+                            <span class="pill purple">Pulumi</span>
+                        </div>
+                        <h3>Multi-Cloud DR (AWS + GCP)</h3>
+                        <p class="muted">Developed cross-cloud disaster recovery using Pulumi IaC with automated failover testing. Conducted 7 failover drills validating 100% recovery capability within 5-minute RTO.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects/tree/main/Advanced%20Cloud%20Architecture%20%26%20Resilience%20Projects" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">Security</span>
+                            <span class="pill purple">Monitoring</span>
+                        </div>
+                        <h3>Security Monitoring & IAM (5 Labs)</h3>
+                        <p class="muted">Implemented CloudWatch alarms, GuardDuty threat detection, and IAM Access Analyzer. Identified 13 misconfigurations and resolved permission issues, improving security compliance by 29%.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank" rel="noopener" class="project-link">View Labs on GitHub →</a>
+                    </div>
+
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">RDS</span>
+                            <span class="pill purple">Database</span>
+                        </div>
+                        <h3>RDS Database Operations & Troubleshooting</h3>
+                        <p class="muted">Configured Aurora multi-AZ deployments with automated backups, PITR, and read replicas. Troubleshot connection issues and optimized performance, reducing query latency by 37%.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects/tree/main/p3-lab02-aurora-database-with-ec2" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">ALB</span>
+                            <span class="pill purple">Auto Scaling</span>
+                        </div>
+                        <h3>Application Load Balancer & Auto Scaling</h3>
+                        <p class="muted">Deployed ALB with target groups, health checks, and Auto Scaling policies using CloudWatch metrics. Configured scale-out triggers maintaining 99.7% availability during traffic spikes.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
+                    </div>
+
+                    <div class="card project-card hover-lift">
+                        <div class="pillrow">
+                            <span class="pill green">EKS</span>
+                            <span class="pill purple">Kubernetes</span>
+                        </div>
+                        <h3>EKS Kubernetes Deployment & Monitoring</h3>
+                        <p class="muted">Deployed containerized apps to EKS using Kubernetes manifests and Helm charts. Implemented Container Insights monitoring reducing MTTR for pod failures by 51%.</p>
+                        <a href="https://github.com/Chyarpsh/aws-cloud-engineer-projects/tree/main/p5-lab06-launch-a-kubernetes-cluster" target="_blank" rel="noopener" class="project-link">View on GitHub →</a>
                     </div>
                 </div>
 
-                <div style="margin-top:14px;">
-                    <a class="btn secondary" href="https://github.com/Chyarpsh/aws-cloud-engineer-projects"
-                        target="_blank" rel="noopener">
-                        View all projects on GitHub →
+                <div class="view-all">
+                    <a class="btn secondary" href="https://github.com/Chyarpsh/aws-cloud-engineer-projects" target="_blank" rel="noopener">
+                        View all 50+ projects on GitHub →
                     </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications">
+            <div class="container">
+                <h2>Certifications</h2>
+                <p class="section-subtext">Building expertise through AWS certification pathways</p>
+
+                <div class="cert-grid">
+                    <div class="card cert-card hover-lift">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-content">
+                            <h3>AWS Solutions Architect Associate</h3>
+                            <div class="muted cert-status">SAA-C02 • In Progress</div>
+                            <div class="cert-progress">
+                                <div class="cert-progress-bar" style="width:75%"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card cert-card hover-lift">
+                        <div class="cert-icon">📜</div>
+                        <div class="cert-content">
+                            <h3>AWS CloudOps Engineer Associate</h3>
+                            <div class="muted cert-status">SOA-C03 • In Progress</div>
+                            <div class="cert-progress">
+                                <div class="cert-progress-bar" style="width:70%"></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -221,30 +327,29 @@
         <section id="contact">
             <div class="container">
                 <h2>Contact Me</h2>
-                <p class="muted section-subtext">Best ways to reach me.</p>
+                <p class="section-subtext">Best ways to reach me</p>
 
                 <div class="contact-grid">
-                    <a class="card contact-card" href="mailto:chowdhurya290@gmail.com">
+                    <a class="card contact-card hover-lift" href="mailto:chowdhurya290@gmail.com">
                         <div class="contact-left">
-                            <div class="icon" aria-hidden="true">✉️</div>
+                            <div class="icon">✉️</div>
                             <div>
-                                <div style="font-weight:900;">Email</div>
-                                <div class="muted" style="font-size:14px;">chowdhurya290@gmail.com</div>
+                                <div class="contact-title">Email</div>
+                                <div class="muted contact-detail">chowdhurya290@gmail.com</div>
                             </div>
                         </div>
-                        <div style="color:var(--green); font-weight:900;">→</div>
+                        <div class="arrow">→</div>
                     </a>
 
-                    <a class="card contact-card" href="https://www.linkedin.com/in/arpita-chowdhury-865a87203/"
-                        target="_blank" rel="noopener">
+                    <a class="card contact-card hover-lift" href="https://www.linkedin.com/in/arpita-chowdhury-865a87203/" target="_blank" rel="noopener">
                         <div class="contact-left">
-                            <div class="icon" aria-hidden="true">in</div>
+                            <div class="icon">in</div>
                             <div>
-                                <div style="font-weight:900;">LinkedIn</div>
-                                <div class="muted" style="font-size:14px;">Connect &amp; message me</div>
+                                <div class="contact-title">LinkedIn</div>
+                                <div class="muted contact-detail">Connect &amp; message me</div>
                             </div>
                         </div>
-                        <div style="color:var(--green); font-weight:900;">→</div>
+                        <div class="arrow">→</div>
                     </a>
                 </div>
             </div>
@@ -255,16 +360,12 @@
         </section>
     </main>
 
-    <!-- Optional external JS -->
     <script src="./script.js"></script>
 
-    <!-- Inline JS fallback -->
     <script>
-        // Year
         const y = document.getElementById("year");
         if (y) y.textContent = new Date().getFullYear();
 
-        // Active nav (click)
         document.querySelectorAll(".nav-link").forEach(link => {
             link.addEventListener("click", () => {
                 document.querySelectorAll(".nav-link").forEach(l => l.classList.remove("active"));
@@ -272,8 +373,7 @@
             });
         });
 
-        // Active nav (scroll)
-        const ids = ["home", "about", "skills", "projects", "contact"];
+        const ids = ["home", "about", "experience", "skills", "projects", "certifications", "contact"];
         const sections = ids.map(id => document.getElementById(id)).filter(Boolean);
         const links = [...document.querySelectorAll(".nav-link")];
         function setActive() {

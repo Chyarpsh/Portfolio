@@ -89,36 +89,39 @@ header {
    background: none;
    border: none;
    cursor: pointer;
-   padding: 8px;
+   padding: 10px;
    z-index: 101;
    position: relative;
+   -webkit-tap-highlight-color: transparent;
 }
 
 .hamburger {
    display: block;
-   width: 26px;
-   height: 2px;
+   width: 28px;
+   height: 3px;
    background: #fff;
    position: relative;
-   transition: all .3s;
+   transition: all .3s ease;
+   border-radius: 2px;
 }
 
 .hamburger::before,
 .hamburger::after {
    content: '';
    position: absolute;
-   width: 26px;
-   height: 2px;
+   width: 28px;
+   height: 3px;
    background: #fff;
-   transition: all .3s;
+   transition: all .3s ease;
+   border-radius: 2px;
 }
 
 .hamburger::before {
-   top: -8px;
+   top: -9px;
 }
 
 .hamburger::after {
-   top: 8px;
+   top: 9px;
 }
 
 /* Hamburger animation when menu is open */
@@ -129,11 +132,13 @@ header {
 .menu-toggle.active .hamburger::before {
    transform: rotate(45deg);
    top: 0;
+   background: var(--green);
 }
 
 .menu-toggle.active .hamburger::after {
    transform: rotate(-45deg);
    top: 0;
+   background: var(--green);
 }
 
 .links {
@@ -656,19 +661,21 @@ footer {
       right: 0;
       background: rgba(26, 31, 53, .98);
       flex-direction: column;
-      padding: 20px 24px;
+      padding: 0 24px;
       gap: 0;
       border-top: 1px solid rgba(255,255,255,.08);
       box-shadow: 0 10px 30px rgba(0,0,0,.3);
       max-height: 0;
       overflow: hidden;
       opacity: 0;
+      visibility: hidden;
       transition: all .3s ease;
    }
    
    .links.active {
       max-height: 500px;
       opacity: 1;
+      visibility: visible;
       padding: 20px 24px;
    }
    

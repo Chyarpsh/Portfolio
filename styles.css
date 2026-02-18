@@ -553,30 +553,305 @@ footer {
 }
 
 /* ── RESPONSIVE ── */
+
+/* Large Tablets & Small Laptops (960px and below) */
 @media (max-width: 960px) {
-   .what-grid  { grid-template-columns: 1fr 1fr; }
-   .skills-grid { grid-template-columns: 1fr 1fr; }
-   .projects-grid { grid-template-columns: 1fr 1fr; }
-   .tag-grid { grid-template-columns: repeat(3, 1fr); }
+   .container { width: calc(100% - 40px); }
+   
    h1 { font-size: 44px; }
+   h2 { font-size: 30px; }
+   
+   section { padding: 90px 0; }
+   .hero { padding: 110px 0 90px; }
+   
+   .what-grid  { grid-template-columns: 1fr 1fr; gap: 18px; }
+   .skills-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+   .projects-grid { grid-template-columns: 1fr 1fr; gap: 18px; }
+   .tag-grid { grid-template-columns: repeat(3, 1fr); gap: 10px; }
 }
 
-@media (max-width: 640px) {
-   section { padding: 80px 0; }
-   .hero { padding: 100px 0 80px; }
-   .container { width: calc(100% - 32px); }
-   h1 { font-size: 36px; }
+/* Tablets (768px and below) */
+@media (max-width: 768px) {
+   .container { width: calc(100% - 36px); }
+   
+   h1 { font-size: 40px; }
    h2 { font-size: 28px; }
-   .section-sub { margin-bottom: 44px; }
-   .what-grid  { grid-template-columns: 1fr; }
-   .skills-grid { grid-template-columns: 1fr; }
-   .projects-grid { grid-template-columns: 1fr; }
-   .cert-grid { grid-template-columns: 1fr; }
-   .contact-grid { grid-template-columns: 1fr; }
-   .tag-grid { grid-template-columns: repeat(2, 1fr); }
-   .exp-header { flex-direction: column; }
-   .links { gap: 14px; }
-   .links a { font-size: 13px; }
-   .about-card { padding: 24px; }
-   .exp-card { padding: 24px; }
+   h3 { font-size: 17px; }
+   
+   section { padding: 70px 0; }
+   .hero { padding: 90px 0 70px; }
+   
+   .hero-lead { font-size: 19px; }
+   .hero-tagline { font-size: 16px; padding: 0 20px; }
+   .section-sub { font-size: 15px; padding: 0 20px; margin-bottom: 48px; }
+   
+   .what-grid { grid-template-columns: 1fr; gap: 16px; }
+   .skills-grid { grid-template-columns: 1fr; gap: 16px; }
+   .projects-grid { grid-template-columns: 1fr; gap: 16px; }
+   .cert-grid { grid-template-columns: 1fr; gap: 16px; }
+   .contact-grid { grid-template-columns: 1fr; gap: 16px; }
+   .tag-grid { grid-template-columns: repeat(2, 1fr); gap: 10px; }
+   
+   .exp-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+   }
+   .date {
+      align-self: flex-start;
+      margin-top: 2px;
+   }
+   
+   .about-card { padding: 28px 22px; }
+   .exp-card { padding: 28px 22px; }
+   .skill-card { padding: 26px 20px; }
+   .project-card { padding: 22px 18px; }
+   .cert-card { padding: 24px 20px; }
+   .contact-card { padding: 22px 18px; }
+   .what-card { padding: 32px 18px; }
+   
+   .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 16px 0;
+   }
+   .links {
+      width: 100%;
+      justify-content: flex-start;
+      gap: 14px;
+      flex-wrap: wrap;
+   }
+}
+
+/* Mobile Phones (640px and below) */
+@media (max-width: 640px) {
+   .container { width: calc(100% - 32px); }
+   
+   /* Typography - Mobile optimized */
+   h1 {
+      font-size: 34px;
+      line-height: 1.15;
+      margin-bottom: 16px;
+   }
+   h2 {
+      font-size: 26px;
+      margin-bottom: 12px;
+   }
+   h3 { font-size: 17px; }
+   
+   /* Spacing - Tighter on mobile */
+   section { padding: 60px 0; }
+   .hero { padding: 70px 0 60px; }
+   
+   .hero-lead {
+      font-size: 18px;
+      padding: 0 16px;
+      margin-bottom: 10px;
+   }
+   .hero-tagline {
+      font-size: 15px;
+      padding: 0 16px;
+      margin-bottom: 32px;
+   }
+   .section-sub {
+      font-size: 14px;
+      padding: 0 16px;
+      margin-bottom: 42px;
+   }
+   
+   /* Buttons - Full width, bigger touch targets */
+   .cta {
+      flex-direction: column;
+      width: 100%;
+      gap: 10px;
+   }
+   .btn {
+      width: 100%;
+      padding: 14px 20px;
+      font-size: 16px;
+      min-height: 48px;
+   }
+   
+   /* Navigation - Mobile friendly */
+   .nav {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 14px 0;
+      gap: 14px;
+   }
+   .brand { margin-bottom: 2px; }
+   .links {
+      width: 100%;
+      justify-content: flex-start;
+      gap: 10px;
+      flex-wrap: wrap;
+   }
+   .links a {
+      font-size: 13px;
+      padding: 8px 0;
+   }
+   
+   /* Grids - Single column on mobile */
+   .what-grid  { grid-template-columns: 1fr; gap: 14px; }
+   .skills-grid { grid-template-columns: 1fr; gap: 14px; }
+   .projects-grid { grid-template-columns: 1fr; gap: 14px; }
+   .cert-grid { grid-template-columns: 1fr; gap: 14px; }
+   .contact-grid { grid-template-columns: 1fr; gap: 14px; }
+   .tag-grid { grid-template-columns: 1fr; gap: 8px; }
+   
+   /* Cards - Mobile padding */
+   .card { padding: 18px; }
+   .about-card { padding: 22px 18px; }
+   .exp-card { padding: 22px 18px; }
+   .skill-card { padding: 22px 18px; }
+   .project-card { padding: 18px 16px; }
+   .cert-card { padding: 20px 16px; }
+   .contact-card { padding: 18px 16px; }
+   .what-card { padding: 26px 16px; }
+   
+   /* What I Do cards */
+   .what-icon { font-size: 32px; }
+   .what-card h3 { font-size: 17px; }
+   .what-card p { font-size: 14px; }
+   
+   /* Experience card */
+   .exp-header {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 8px;
+   }
+   .exp-header h3 { font-size: 18px; }
+   .company { font-size: 14px; }
+   .date {
+      font-size: 13px;
+      padding: 5px 12px;
+   }
+   .achievement-list {
+      padding-left: 18px;
+   }
+   .achievement-list li {
+      font-size: 14px;
+      line-height: 1.7;
+      margin-bottom: 12px;
+   }
+   
+   /* About section */
+   .about-card p {
+      font-size: 15px;
+      margin-bottom: 20px;
+   }
+   
+   /* Skills cards */
+   .skill-card p { font-size: 13px; }
+   
+   /* Project cards */
+   .project-card p.muted { font-size: 13px; }
+   .pill { font-size: 11px; padding: 5px 10px; }
+   
+   /* Certification cards */
+   .cert-card {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 14px;
+   }
+   .cert-icon {
+      width: 48px;
+      height: 48px;
+      font-size: 24px;
+   }
+   .cert-content h3 { font-size: 15px; }
+   .cert-status { font-size: 12px; }
+   
+   /* Contact cards - Touch friendly */
+   .contact-card { min-height: 60px; }
+   .icon {
+      width: 40px;
+      height: 40px;
+      font-size: 16px;
+   }
+   .contact-title { font-size: 15px; }
+   .contact-detail { font-size: 12px; }
+   
+   /* Tags */
+   .tag {
+      font-size: 13px;
+      padding: 10px 14px;
+   }
+   
+   /* Footer */
+   footer {
+      padding: 24px 0 32px;
+      font-size: 13px;
+   }
+}
+
+/* Small Mobile Phones (480px and below) */
+@media (max-width: 480px) {
+   .container { width: calc(100% - 28px); }
+   
+   /* Typography - Extra small screens */
+   h1 {
+      font-size: 30px;
+      line-height: 1.2;
+   }
+   h2 { font-size: 24px; }
+   h3 { font-size: 16px; }
+   
+   /* Spacing - Compact */
+   section { padding: 50px 0; }
+   .hero { padding: 60px 0 50px; }
+   
+   .hero-lead {
+      font-size: 16px;
+      padding: 0 12px;
+   }
+   .hero-tagline {
+      font-size: 14px;
+      padding: 0 12px;
+   }
+   .section-sub {
+      font-size: 13px;
+      padding: 0 12px;
+      margin-bottom: 36px;
+   }
+   
+   /* Buttons */
+   .btn {
+      padding: 12px 18px;
+      font-size: 15px;
+   }
+   
+   /* Cards - Extra compact */
+   .about-card { padding: 20px 16px; }
+   .exp-card { padding: 20px 16px; }
+   .skill-card { padding: 20px 16px; }
+   .project-card { padding: 16px 14px; }
+   .cert-card { padding: 18px 14px; }
+   .contact-card { padding: 16px 14px; }
+   .what-card { padding: 24px 14px; }
+   
+   /* Typography in cards */
+   .about-card p { font-size: 14px; }
+   .achievement-list li { font-size: 13px; }
+   .skill-card p { font-size: 12px; }
+   .project-card p.muted { font-size: 12px; }
+   .what-card p { font-size: 13px; }
+   
+   .exp-header h3 { font-size: 17px; }
+   .company { font-size: 13px; }
+   
+   /* Icons */
+   .what-icon { font-size: 28px; }
+   .cert-icon {
+      width: 44px;
+      height: 44px;
+      font-size: 22px;
+   }
+}
+
+/* Landscape phones (tall and narrow) */
+@media (max-height: 600px) and (orientation: landscape) {
+   .hero { padding: 40px 0 40px; }
+   section { padding: 40px 0; }
 }

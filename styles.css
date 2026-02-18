@@ -54,6 +54,7 @@ header {
    justify-content: space-between;
    padding: 16px 0;
    gap: 20px;
+   position: relative;
 }
 
 .brand {
@@ -63,6 +64,7 @@ header {
    font-weight: 800;
    white-space: nowrap;
    transition: transform .3s;
+   z-index: 101;
 }
 .brand:hover { transform: scale(1.03); }
 
@@ -79,6 +81,59 @@ header {
    background: rgba(35,209,139,.14);
    border-color: rgba(35,209,139,.4);
    transform: rotate(360deg);
+}
+
+/* Hamburger menu button - hidden on desktop */
+.menu-toggle {
+   display: none;
+   background: none;
+   border: none;
+   cursor: pointer;
+   padding: 8px;
+   z-index: 101;
+   position: relative;
+}
+
+.hamburger {
+   display: block;
+   width: 26px;
+   height: 2px;
+   background: #fff;
+   position: relative;
+   transition: all .3s;
+}
+
+.hamburger::before,
+.hamburger::after {
+   content: '';
+   position: absolute;
+   width: 26px;
+   height: 2px;
+   background: #fff;
+   transition: all .3s;
+}
+
+.hamburger::before {
+   top: -8px;
+}
+
+.hamburger::after {
+   top: 8px;
+}
+
+/* Hamburger animation when menu is open */
+.menu-toggle.active .hamburger {
+   background: transparent;
+}
+
+.menu-toggle.active .hamburger::before {
+   transform: rotate(45deg);
+   top: 0;
+}
+
+.menu-toggle.active .hamburger::after {
+   transform: rotate(-45deg);
+   top: 0;
 }
 
 .links {
@@ -585,6 +640,57 @@ footer {
    .hero-tagline { font-size: 16px; padding: 0 20px; }
    .section-sub { font-size: 15px; padding: 0 20px; margin-bottom: 48px; }
    
+   /* Mobile navigation */
+   .menu-toggle {
+      display: block;
+   }
+   
+   .nav {
+      flex-wrap: wrap;
+   }
+   
+   .links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      background: rgba(26, 31, 53, .98);
+      flex-direction: column;
+      padding: 20px 24px;
+      gap: 0;
+      border-top: 1px solid rgba(255,255,255,.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,.3);
+      max-height: 0;
+      overflow: hidden;
+      opacity: 0;
+      transition: all .3s ease;
+   }
+   
+   .links.active {
+      max-height: 500px;
+      opacity: 1;
+      padding: 20px 24px;
+   }
+   
+   .links a {
+      width: 100%;
+      padding: 14px 0;
+      font-size: 16px;
+      border-bottom: 1px solid rgba(255,255,255,.05);
+   }
+   
+   .links a:last-child {
+      border-bottom: none;
+   }
+   
+   .links a.active::after {
+      display: none;
+   }
+   
+   .links a.active {
+      color: var(--green);
+   }
+   
    .what-grid { grid-template-columns: 1fr; gap: 16px; }
    .skills-grid { grid-template-columns: 1fr; gap: 16px; }
    .projects-grid { grid-template-columns: 1fr; gap: 16px; }
@@ -609,19 +715,6 @@ footer {
    .cert-card { padding: 24px 20px; }
    .contact-card { padding: 22px 18px; }
    .what-card { padding: 32px 18px; }
-   
-   .nav {
-      flex-direction: column;
-      align-items: flex-start;
-      gap: 14px;
-      padding: 16px 0;
-   }
-   .links {
-      width: 100%;
-      justify-content: flex-start;
-      gap: 14px;
-      flex-wrap: wrap;
-   }
 }
 
 /* Mobile Phones (640px and below) */
@@ -671,25 +764,6 @@ footer {
       padding: 14px 20px;
       font-size: 16px;
       min-height: 48px;
-   }
-   
-   /* Navigation - Mobile friendly */
-   .nav {
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 14px 0;
-      gap: 14px;
-   }
-   .brand { margin-bottom: 2px; }
-   .links {
-      width: 100%;
-      justify-content: flex-start;
-      gap: 10px;
-      flex-wrap: wrap;
-   }
-   .links a {
-      font-size: 13px;
-      padding: 8px 0;
    }
    
    /* Grids - Single column on mobile */
